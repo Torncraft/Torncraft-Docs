@@ -19,6 +19,7 @@ To contribute, all you need to do is go to
 and make all the changes you need. Then we can look at your edits and decide to merge it or not.<br><br>
 
 <h3><font color=red>Note that this is a working document! It is not finished!</font></h3>
+<h3><font color=green>Last updated <b>March 21, 2014</b>.</font></h3>
 
 <h1>The server</h1>
 
@@ -61,12 +62,32 @@ Unfortunately, as past experiences tell, this has been incredibly difficult to m
 This section is for plugins used in Torncraft. They are divided into two sections: gameplay-altering and technical, and affect certain worlds as indicated. Gameplay-altering plugins alter gameplay in some way easily noticeable by the player, while technical plugins serve as a base for the server to run on, although players may have <i>some</i> gameplay-altering effects.
 <h2>Gameplay-altering</h2>
 These plugins interact with the player directly in some way to extend the Minecraft experience.
+
+
 <h3>Lockette</h3>
-Lockette allows you to protect your chests and other containers from malicious individuals who might want to steal your items or destroy your containers. You can also lock doors and trapdoors so that only those allowed via Lockette can open the door and redstone cannot trigger the door or trapdoor in question.<br>
+
+Lockette allows you to protect your chests, other containers, and doors from malicious individuals who might want to steal your items, sneak into your house, or destroy them. You can also lock doors and trapdoors so that only those allowed via Lockette can open the door and redstone cannot trigger the door or trapdoor in question.<br>
 <a href="https://www.youtube.com/watch?v=CVcU_ZPgF0E">Video Tutorial</a>
-<h4>Usage:</h4>
+
+<h4>Basic usage:</h4>
+
 Right clicking the side of a container with a sign will automatically lock the chest such that only you can open it.<br>
-Right clicking another side with another sign will add a [More Users] sign, which defaults to [Everyone]
+Right clicking another side with another sign will add a <b>[More Users]</b> sign, which defaults to <b>[Everyone]</b>.<br><br>
+
+To add people to signs, right click the sign and use the following command:<br>
+<b>/lockette [#] [line]</b><br>
+This allows you to edit line number [#] on the sign to read [line].
+
+<h4>Special usage:</h4>
+
+To manually create Lockette signs, put a sign on a valid location (in front of a container, door, or its dependent block) and write <b>[Private]</b> on the first line. If the location is valid, then Lockette will accept the <b>[Private]</b> sign and put your name on the first line, unless you put someone else's name there. You can also put other names underneath yours/the owner's name while creating the sign. If you need more room for lines, add another sign headed <b>[More Users]</b>.<br><br>
+
+You can put timers on doors and trapdoors by using <b>[Timer:#]</b> as one of the Lockette lines, replacing # with the amount of time in seconds that you wish to allow the door or trapdoor to stay open until it closes. However, sometimes these glitch out and do the timer the completely wrong way. In that case, do <b>/lockette fix</b> while looking directly at the door or trapdoor.<br><br>
+
+To allow anyone to access but not destroy your container or door, add <b>[Everyone]</b> as a line. Anyone will be able to use it, but cannot break it.<br><br>
+
+When typing names of players on signs, spell everything correctly and as it appears in the <TAB> list. (the actual in-game name, not the nickname) If a player name is too long to fit on one line, simply write as much of it as you can (the first 15 characters) and that will allow any user with those first 15 characters in their name to use it. This may be a problem when people have the same first 15 characters in their usernames, but this has never happened before. We will leave a precedent for later.
+
 <h3>Factions</h3>
 <h3>Craftconomy</h3>
 <h2>Technical</h2>
