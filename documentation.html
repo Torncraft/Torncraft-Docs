@@ -72,6 +72,7 @@ font-family: wf;
 ">The Torncraft Documentation</h1><h1></h1>
 
 
+
 <h3>How to contribute to this document</h3>
 
 To contribute, all you need to do is go to 
@@ -80,7 +81,10 @@ To contribute, all you need to do is go to
 <a href="https://github.com/Torncraft/Torncraft-Docs">find Torncraft-Docs</a>,
 <a href="https://github.com/Torncraft/Torncraft-Docs/blob/master/documentation.html">click on documentation.html</a>,
 <a href="https://github.com/Torncraft/Torncraft-Docs/edit/master/documentation.html">then edit</a>,
-and make all the changes you need. Then we can look at your edits and decide to merge it or not.<br>
+and make all the changes you need. Then we can look at your edits and decide to merge it or not.<br><br>
+
+<h3 style="color:red">Note that this is a working document! It is not finished!</font></h3>
+<h3 style="color:green">Last updated March 21, 2014.</h3>
 
 <h1>The server</h1>
 
@@ -88,14 +92,22 @@ and make all the changes you need. Then we can look at your edits and decide to 
 Torncraft is an all-inclusive, friendly community-based Minecraft server with multiple gamemodes, all centered on the feats a community can achieve.
 
 <h2>Rank System</h2>
-Basically, there are 4 Ranks, and they are ordered in Importancy and Influence in the server.
+There are seven ranks, ordered in importance and influence in the server:<br><br>
 
-[O] : Owner
-[A] : Administrator
-[M] : Moderator
-[$] : Donor
-[T] : Trusted (People who plays everyday and causes no problems in the server)
-... : User (Has no Prefix)
+<b>[<font color="D9A334">O</font>] : Owner</b><br>
+Owns the server. There is absolutely no way to get this.<br>
+<b>[<font color="be0000">A</font>] : Administrator</b><br>
+There is virtually no way to get this. Prerequisite: Moderator.<br>
+<b>[<font color="be00be">M</font>] : Moderator</b><br>
+Get <i>selected by the staff</i> and choose to do this job. If you ask for it, you won't get it. Prerequisite: Trusted<br>
+<b>[<font color="3ffe3f">T</font>] : Trusted</b><br>
+Play often and cause no problems in the server. No donation required. However, it can be combined with donator to get all donator perks plus access to extra worlds.<br>
+<b>[<font color="3ffe3f">$$$</font>] : Contributor</b><br>
+Donate $20 or more. Lasts for a month.<br>
+<b>[<font color="00bebe">$</font>] : Donator</b><br>
+Donate $5 or more. Lasts for a month.<br>
+<b>... : User (no prefix)</b><br>
+Log in once to the server.<br>
 
 <h2>Supporting the server</h2>
 
@@ -114,8 +126,35 @@ Unfortunately, as past experiences tell, this has been incredibly difficult to m
 <h1>The plugins</h1>
 This section is for plugins used in Torncraft. They are divided into two sections: gameplay-altering and technical, and affect certain worlds as indicated. Gameplay-altering plugins alter gameplay in some way easily noticeable by the player, while technical plugins serve as a base for the server to run on, although players may have <i>some</i> gameplay-altering effects.
 <h2>Gameplay-altering</h2>
+These plugins interact with the player directly in some way to extend the Minecraft experience.
+
+
 <h3>Lockette</h3>
+
+Lockette allows you to protect your chests, other containers, and doors from malicious individuals who might want to steal your items, sneak into your house, or destroy them. You can also lock doors and trapdoors so that only those allowed via Lockette can open the door and redstone cannot trigger the door or trapdoor in question.<br>
+<a href="https://www.youtube.com/watch?v=CVcU_ZPgF0E">Video Tutorial</a>
+
+<h4>Basic usage:</h4>
+
+Right clicking the side of a container with a sign will automatically lock the chest such that only you can open it.<br>
+Right clicking another side with another sign will add a <b>[More Users]</b> sign, which defaults to <b>[Everyone]</b>.<br><br>
+
+To add people to signs, right click the sign and use the following command:<br>
+<b>/lockette [#] [line]</b><br>
+This allows you to edit line number [#] on the sign to read [line].
+
+<h4>Special usage:</h4>
+
+To manually create Lockette signs, put a sign on a valid location (in front of a container, door, or its dependent block) and write <b>[Private]</b> on the first line. If the location is valid, then Lockette will accept the <b>[Private]</b> sign and put your name on the first line, unless you put someone else's name there. You can also put other names underneath yours/the owner's name while creating the sign. If you need more room for lines, add another sign headed <b>[More Users]</b>.<br><br>
+
+You can put timers on doors and trapdoors by using <b>[Timer:#]</b> as one of the Lockette lines, replacing # with the amount of time in seconds that you wish to allow the door or trapdoor to stay open until it closes. However, sometimes these glitch out and do the timer the completely wrong way. In that case, do <b>/lockette fix</b> while looking directly at the door or trapdoor.<br><br>
+
+To allow anyone to access but not destroy your container or door, add <b>[Everyone]</b> as a line. Anyone will be able to use it, but cannot break it.<br><br>
+
+When typing names of players on signs, spell everything correctly and as it appears in the <tab> list. (the actual in-game name, not the nickname) If a player name is too long to fit on one line, simply write as much of it as you can (the first 15 characters) and that will allow any user with those first 15 characters in their name to use it. This may be a problem when people have the same first 15 characters in their usernames, but this has never happened before. We will leave a precedent for later.
+
 <h3>Factions</h3>
+Factions is a plugin that allows you to create "Factions," which are countries composed of people, land, and power. As a user, Factions has many powerful capabilities, but you must first obtain the power necessary to use them properly.
 <h3>Craftconomy</h3>
 <h2>Technical</h2>
 <h3>Multiverse</h3>
@@ -125,7 +164,31 @@ This section is for plugins used in Torncraft. They are divided into two section
 <h2>Vanilla Survival (Trusted)</h2>
 <h2>Plots Creative</h2>
 <h2>Freebuild Creative (Trusted)</h2>
-  
+<h1>Technicalities in the rules</h1>
+This section outlines exceptions to the rules, random scenarios that may or may not occur again, and rules for admins that don't apply to players.
+<h2>1. Separation of Staff and Player</h2>
+Staff must be faction- and group- neutral and keep his/her survival mode game out of mind when doing anything staff-related or in the mindset of a staff member. To illustrate this, let's take a real world example. (names replaced with standardized names)<br><br>
+<h3>Example:</h3>
+<b>There are four people:</b><br>
+Bob, a normal player in Faction X,<br>
+Larry, a moderator and the leader of Faction Y,<br>
+Moe, a normal player in Faction X,<br>
+and Joe, a moderator in Faction Y.<br><br>
+<b>The case:</b><br>
+Moe, a spy for Faction Y, unclaims all land in Faction X, including Bob's house.<br>
+Bob later comes online and is dismayed that his house is claimed by Faction Y. He begs Larry to unclaim his house.<br>
+Larry, thinking Joe claimed Bob's house using moderator powers, unclaims it and gives an angry letter to Joe. Note that as the leader of Faction Y, he could have also done this as a player.<br>
+Bob thanks Larry and leaves.<br>
+Joe comes online and notices that Bob's land is claimed by Faction X. Then he notices the angry letter by Larry and explains that Moe unclaimed all land of Faction X.<br>
+Larry realizes this and that his mistake lost his faction the rich loot of Bob's house. However, he has to leave, but tells Joe to reclaim Bob's house using moderator powers.<br>
+Joe reclaims Bob's house with moderator powers.<br><br>
+<b>The result:</b><br>
+Bob complains that Joe did admin abuse and Larry's unclaim was fair because it was his mistake as a player because he could execute the same unclaim command as a player.<br>
+Joe tells Bob that his reclaim was fair because Larry made a moderator mistake because he was acting as a moderator reverting what he thought was admin abuse.<br><br>
+Who is correct? Bob or Joe?<br>
+
+<b>Current consensus: <font color="red">No consensus</font></b>. Need more opinion to declare as official rule. For now, interpret this depending on the situation, perhaps with an administrative committee.
+
 </div>
 <br>
         <div id="footer" style="
